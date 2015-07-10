@@ -1,0 +1,35 @@
+{
+  "name": "hello-world",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "browserify-incremental": "^3.0.1",
+    "jest-cli": "^0.4.14",
+    "react": "^0.13.3",
+    "react-tools": "^0.13.3",
+    "reactify": "^1.1.1"
+  },
+  "jest": {
+    "rootDir": "./app/assets/javascripts/components",
+    "scriptPreprocessor": "<rootDir>/__tests__/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "testFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "testPathIgnorePatterns": [
+      "preprocessor.js"
+    ]
+  },
+  "scripts": {
+    "test": "node ./node_modules/jest-cli/bin/jest.js"
+  },
+  "engines": {
+    "node": "0.10.33"
+  }
+}
